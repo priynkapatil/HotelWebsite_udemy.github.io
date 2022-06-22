@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="alpanzo is the hotel where you can have your peaceful moments!!">
+    <meta name="keywords" content="hotel, stay, vacation, food, india stay">
+    <title>Alpanzo | Welcome </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" href="slide.css"> 
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Alpanzo</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>             
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+         </nav>
+</header>
+
+<section id="slider">
+    <div class="slider">
+        <div class="slides">
+<input type="radio" name="radio-btn" id="radio1">
+<input type="radio" name="radio-btn" id="radio2">
+<input type="radio" name="radio-btn" id="radio3">
+<input type="radio" name="radio-btn" id="radio4">
+<input type="radio" name="radio-btn" id="radio5"
+          <!--radio buttons for image slide end-->
+
+           <!--image slide starts-->
+           <div class="slide first">
+            <img src="img/d5.jpeg" alt="" width="500px" height="400">
+        </div>
+        <div class="slide first">
+          <img src="img/d2.jpeg" alt="" width="100%">
+      </div>
+      <div class="slide first">
+          <img src="img/d3.jpeg" alt="" width="100%">
+      </div>
+      <div class="slide first">
+          <img src="img/d4.jpeg" alt="">
+      </div>
+      <div class="slide first">
+          <img src="img/d6.jpeg" alt="">
+      </div>
+</section>
+<script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio'+ counter).checked = true;
+        counter++;
+        if(counter>5){
+            counter=1;
+        }
+    },5000)
+
+</script>
+
+
+</body>
+</html>
